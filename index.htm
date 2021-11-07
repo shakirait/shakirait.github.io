@@ -1,0 +1,948 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Bicester Village</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>$.fn.slider = null</script>
+	<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.min.js"></script>
+	<link rel="shortcut icon" href="http://static.cdn.responsys.net/i5/responsysimages/content/valuer/bv_favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="Guest_Sentiment_Survey-CSS.css" />
+	<link rel="stylesheet" type="text/css" href="Guest_Sentiment_Survey-CSS-New.css" />
+</head>
+
+<body>
+	<div class="canvas">
+		<div class="outer">
+			<div class="inner">
+				<!-- Centralised website header $document(/contentlibrary/centralised content/centralised snippets/website_village_headers/,concat(lookup(VILLAGE),_website_header.htm))$ -->
+				<header>
+					<div display="block,," fill="white" class="sc-bdVaJa sc-1969yga-2 cnzxrc"><svg width="180"
+							height="42" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M76.843 24.345h-1.368v3.617c0 1.095.57 1.108 1.368 1.122v.408c-.723 0-1.368-.034-2.03-.034-.72 0-1.426.018-2.18.034v-.408c.754.048 1.37-.155 1.37-1.043v-7.91c0-1.092-.571-1.108-1.37-1.122v-.408c.828.015 1.549.033 2.287.033.525 0 1.052-.033 2.015-.033 2.838 0 3.469 1.654 3.469 2.762 0 1.329-.962 2.31-2.137 2.669 1.368 2.075 2.09 3.323 2.737 4.07.483.563.932.982 1.698.982v.408c-.375 0-.75-.034-1.125-.034-.421 0-.857.018-1.279.034-1.369-1.56-2.374-3.385-3.455-5.147zm1.999-2.889c0-1.355-.69-2.353-2.466-2.353-.376 0-.63.044-.901.093v4.568c.227.047.541.08.799.08 1.845 0 2.568-1.265 2.568-2.388zm-14.35 2.076h1.983c1.218 0 1.218-.983 1.262-1.342h.301c-.029.343-.062 1.185-.062 1.746 0 .5.078 1.232.062 1.733h-.3c0-1.496-.482-1.496-1.638-1.496h-1.607v2.65c0 1.734.057 2.168 1.546 2.168h.933c1.471-.08 2.132-.278 2.72-1.948l.36.06c-.242.779-.467 1.576-.616 2.39-1.504 0-3.007-.035-4.508-.035-1.112 0-2.225 0-3.335.034v-.408c1.306 0 1.427-.25 1.427-1.761v-6.928c0-1.28-.242-1.34-1.427-1.386v-.408c1.005.033 2.029.033 3.035.033 1.442 0 2.868 0 4.327-.033v2.325l-.302.075c-.224-1.464-.9-1.898-2.405-1.898h-1.755v4.429zm-5.56-2.888h-.405c-.046-.842 0-1.401-1.202-1.401h-2.284v8.719c0 1.095.57 1.108 1.369 1.122v.408c-.723 0-1.37-.034-2.031-.034-.719 0-1.427.018-2.176.034v-.408c.795-.014 1.365-.027 1.365-1.122v-8.72h-1.97c-1.35 0-1.41.387-1.666 1.402h-.392l.168-2.48h.298c.166.422.574.437.948.437h6.822c.541 0 .916-.14.975-.437h.317l-.136 2.48zm-18.257 6.274h.344c.258 1.168 1.099 2.31 2.346 2.31 1.156 0 2.058-.844 2.058-2.075 0-2.902-4.447-2.044-4.447-5.728 0-2.012 1.383-3.059 3.214-3.059.619 0 1.233.141 1.834.235l.24 1.996h-.344c-.166-1.09-.856-1.73-1.938-1.73-1.141 0-1.804.857-1.804 1.997 0 2.9 4.628 2.107 4.628 5.695 0 2.028-1.757 3.167-3.531 3.167-.78 0-1.592-.186-2.299-.532l-.3-2.276zm-8.292-3.386h1.982c1.216 0 1.216-.983 1.263-1.342h.3a28.32 28.32 0 0 0-.059 1.746c0 .5.074 1.232.058 1.733h-.299c0-1.496-.482-1.496-1.638-1.496h-1.607v2.65c0 1.734.06 2.168 1.548 2.168h.93c1.473-.08 2.135-.278 2.72-1.948l.36.06c-.24.779-.465 1.576-.615 2.39-1.503 0-3.005-.035-4.507-.035-1.113 0-2.225 0-3.337.034v-.408c1.308 0 1.429-.25 1.429-1.761v-6.928c0-1.28-.243-1.34-1.43-1.386v-.408c1.008.033 2.03.033 3.037.033 1.442 0 2.868 0 4.326-.033v2.325l-.3.075c-.225-1.464-.903-1.898-2.405-1.898h-1.756v4.429zm-5.77-2.107h-.377c-.284-1.825-1.53-2.558-3.214-2.558-1.729 0-4.239 1.2-4.239 4.944 0 3.153 2.164 5.417 4.477 5.417 1.49 0 2.723-1.062 3.022-2.702l.345.095-.345 2.277c-.63.405-2.329.828-3.32.828-3.516 0-5.741-2.356-5.741-5.866 0-3.2 2.75-5.494 5.694-5.494 1.217 0 2.391.407 3.547.83l.152 2.229zM12.203 20.13c0-1.092-.571-1.108-1.367-1.122v-.408c.705.015 1.398.033 2.073.033.691 0 1.384-.018 2.133-.033v.408c-.796.014-1.366.03-1.366 1.122v7.83c0 1.096.57 1.109 1.366 1.123v.408c-.722 0-1.366-.034-2.028-.034-.72 0-1.428.018-2.178.034v-.408c.796-.014 1.367-.027 1.367-1.122V20.13zM0 29.492v-.408c.753.048 1.368-.155 1.368-1.043v-7.91c0-1.092-.573-1.108-1.368-1.122v-.408c.42 0 .842.033 1.247.033h.467c.857 0 1.412-.033 1.954-.033 1.112 0 3.501.33 3.501 2.528 0 1.45-1.263 2.202-2.42 2.48v.031c1.128-.064 3.38.718 3.38 2.919 0 1.667-1.381 2.933-4.042 2.933-.706 0-1.412-.034-2.116-.034-.662 0-1.324.018-1.971.034zm2.84-10.361v4.401h.572c1.218 0 2.285-.404 2.285-2.37 0-1.798-1.023-2.06-2.226-2.06-.195 0-.404.013-.63.029zm0 4.9v3.683c0 .7 0 1.277 1.353 1.277 1.789 0 2.374-1.263 2.374-2.231 0-2.23-1.337-2.728-2.825-2.728h-.901zm102.036 6.043h.301c.215 0 .449-.022.449-.265 0-.214-.19-.277-.36-.277h-.39v.542zm-.122-.647h.533c.319 0 .46.133.46.386 0 .227-.163.337-.365.369l.423.641h-.135l-.426-.643h-.368v.643h-.122v-1.396zm-.64.698c0 .596.467 1.077 1.08 1.077.611 0 1.072-.483 1.072-1.08 0-.603-.458-1.073-1.073-1.073-.617 0-1.08.467-1.08 1.076zm2.273 0c0 .654-.534 1.181-1.197 1.181a1.188 1.188 0 0 1-1.198-1.18c0-.655.535-1.181 1.198-1.181.663 0 1.197.526 1.197 1.18zM97.296 19.3c2.436-2.646 1.192-4.577-1.136-5.434 1.669 1.673 1.85 2.89 1.136 5.434zM94.794 21c1.343.832 3.16.292 3.375-1.519-.705.808-2.072 1.412-3.375 1.519zm-2.287-1.707c2.378.66 4.43-.755 4.17-3.013-.709-.802-1.706-1.11-3.173-.846 1.32-.036 2.274.818 2.618 1.837-.3.383-.734.728-1.318 1.056-1.167-.202-1.66-.49-2.231-.902.477-.397 1.373-.81 2.412-.878-1.34-.317-2.522-.135-3.464.33.38.872 1.156 1.528 2.147 1.985-.352.143-.735.286-1.161.43zm-2.502-1.241c.657 2.001 2.04 3.064 3.916 3.692l-.029-1.215c-1.542-.418-2.483-1.027-3.887-2.477zm4.296-3.836c-2.167-.488-4.066.521-4.737 2.64 1.421-1.325 2.917-2.08 4.737-2.64zm7.503 5.36c.126.229.153.47-.053.726-.42.53-.854 1.476-1.145 2.53-.209.756-.941 1.23-1.912.971-1.358-.368-2.548-.964-3.549-1.856.165.482.523.962 1.083 1.355.246.17.257.716-.303.798-.874.136-1.694.708-2.245 1.41-.638.811-1.578.873-2.37.245-.85-.675-1.567-1.416-2-2.319-.113.403.18 1.331-.475 1.087a6.36 6.36 0 0 1-1.427-.775c-.46-.327-.586-.776-.156-1.189.429-.406.716-.879.67-1.305 1.185 1.187 2.383 1.904 4.166 2.413-2.947-1.9-4.069-3.544-4.899-5.628-.268-.67-.218-1.132.176-1.413.62-.435 1.217-1.153 1.708-2.271-.465.456-.724.602-1.116.733.54-.604.928-1.286 1.382-1.849.45-.564.995-.998 1.94-.986 1.063.016 2.242.103 3.407.318-.421-.225-.807-.394-1.243-.591-.078-1.11 1.138-1.172 1.694-.707.711.597 1.489.977 2.44 1.125 1.505.236 2.562 1.48 1.854 1.88-.409.23-.72.384-1.093.58 1.176-.045 2.185-.43 2.729.221.542.653.914 1.49.8 2.206-.078.464-.351.867-.797 1.09-.209.109-.43.413-.183.551.245.137.789.424.917.65zm-4.717 4.354c1.417 7.262-10.317 11.114-13.087.578 2.894 7.54 12.926 5.983 13.087-.578zm-7.433 2.777c1.212.222 1.657.62 1.878 1.539-1.8.28-3.72-.548-4.205-2.072 1.117.397 3.018-.532 4.13 1.055-.5-.433-.94-.61-1.803-.522zm12.005-3.478c.419-1.113.932-1.924 2.146-2.152-.593-.216-1.176-.118-1.653.43 1.002-1.857 2.628-.599 3.65-1.068-.552 1.822-1.99 2.844-4.143 2.79zm-4.143 7.41c.834-.488 1.655-.552 3.047.12-.489-.743-1.177-.98-2.035-1.008 2.206-.77 2.514 1.284 3.591 1.62-1.52 1.111-3.585.678-4.603-.731zm1.283-4.459c1.97-2.875 5.93-2.878 9.201.311-1.14-.006-1.664.47-2.8 1.17-2.233 1.38-4.228 1.503-6.662.426a6.998 6.998 0 0 0-2.281 2.797c.699-4.396 5.396-5.78 8.59-5.524-2.184-.808-4.155-.578-6.048.82zm75.631-3.073h1.988c1.22 0 1.22-.935 1.265-1.277h.299c-.03.327-.06 1.128-.06 1.662 0 .476.075 1.172.06 1.648h-.3c0-1.423-.482-1.423-1.64-1.423h-1.612v2.523c0 1.648.057 2.06 1.55 2.06h.933c1.476-.074 2.139-.263 2.725-1.852l.362.057c-.24.741-.466 1.5-.62 2.273-1.503 0-3.009-.031-4.514-.031-1.113 0-2.228 0-3.341.03v-.386c1.31 0 1.428-.239 1.428-1.676v-6.593c0-1.217-.238-1.274-1.428-1.318v-.39a95.78 95.78 0 0 0 3.04.033c1.444 0 2.876 0 4.338-.032v2.213l-.303.07c-.225-1.393-.905-1.805-2.41-1.805h-1.76v4.214zm-6.306-2.035h-.332c-.392-1.72-1.853-2.403-3.539-2.403-2.663 0-4.198 2.301-4.198 4.72 0 2.567 1.596 5.137 4.303 5.137 1.191 0 1.808-.416 2.033-.58v-2.21c0-1.085-.571-1.085-1.37-1.085v-.387a88.71 88.71 0 0 0 2.076.027c.695 0 1.385-.01 1.837-.027v.387c-.495 0-1.067 0-1.067 1.085v1.945l.225.22v.251c-1.22.432-2.604.848-3.916.848-4.226 0-5.78-3.264-5.78-5.387 0-3.118 2.454-5.421 5.602-5.421 1.34 0 2.619.342 3.869.802l.257 2.078zM152.329 18l2.876 7.825c.21.579.616 1.839.857 2.166.226.298.68.4 1.16.4v.387c-.573 0-1.16-.031-1.731-.031-.74 0-1.461.015-2.2.03v-.386h.271c.379 0 .83-.075.83-.49 0-.164-.121-.579-.226-.86l-.752-2.153h-3.538l-.333 1.04c-.195.624-.405 1.306-.405 1.767 0 .696.494.67 1.024.696h.347v.387c-.59 0-1.19-.031-1.778-.031-.603 0-1.218.015-1.821.03v-.386c.92-.102 1.084-.223 1.46-1.055.243-.532.422-1.112.618-1.66l1.925-5.302c.122-.34.316-.89.316-1.332 0-.15 0-.271-.03-.39.317-.147.662-.31.875-.652h.255zm-.781 1.912l-1.463 4.369h3.103l-1.612-4.369h-.028zm-5.787 8.866c-1.278-.031-2.542-.031-3.819-.031-1.34 0-2.665 0-3.99.03v-.386c.753.045 1.367-.15 1.367-.994v-7.526c0-1.04-.57-1.055-1.367-1.067v-.39c.707.015 1.4.033 2.077.033.692 0 1.384-.018 2.136-.032v.389c-.795.012-1.368.028-1.368 1.067v6.875c0 1.098.24 1.555 2.376 1.555 1.747 0 2.35-.413 2.817-1.853l.33.057-.56 2.273zm-11 0c-1.28-.031-2.546-.031-3.826-.031-1.338 0-2.662 0-3.99.03v-.386c.755.045 1.372-.15 1.372-.994v-7.526c0-1.04-.574-1.055-1.371-1.067v-.39c.71.015 1.401.033 2.078.033.693 0 1.384-.018 2.14-.032v.389c-.798.012-1.372.028-1.372 1.067v6.875c0 1.098.242 1.555 2.381 1.555 1.744 0 2.346-.413 2.813-1.853l.331.057-.556 2.273zm-13.4-8.907c0-1.04-.573-1.055-1.368-1.067v-.39c.707.015 1.399.033 2.078.033.692 0 1.382-.018 2.137-.032v.389c-.798.012-1.369.028-1.369 1.067v7.451c0 1.042.571 1.054 1.37 1.069v.387c-.726 0-1.37-.031-2.033-.031-.723 0-1.43.015-2.183.03v-.386c.795-.015 1.369-.027 1.369-1.069v-7.451zm-11.618 2.984c-.377-.95-.814-1.914-1.16-2.88-.345-.892-.587-1.171-1.583-1.171v-.39c.709.015 1.417.033 2.125.033.633 0 1.279-.032 1.912-.032v.389c-.226.012-.437.012-.648.044-.21.01-.391.133-.391.355 0 .49.798 2.286.963 2.717l2.003 5.077 1.143-2.94c.361-.963.784-1.913 1.097-2.881.152-.478.468-1.202.468-1.692 0-.695-.602-.652-1.142-.68v-.39c.584.015 1.189.033 1.775.033.468 0 .932-.018 1.4-.032v.389c-.512 0-.8.221-1.009.576-.09.163-1.114 2.732-1.143 2.806L112.797 29h-.555l-2.499-6.145z"
+								fill="#202020" fill-rule="evenodd"></path>
+						</svg></div>
+				</header>
+				<!-- // Centralised website header -->
+				<section class="post_purchase_survey">
+					<!--  CONTENT_REGION_|CONTENT_INTRODUCTION| -->
+
+					<!-- EN - OFFLINE -->
+					<!-- <h1>Thank you for visiting us.</h1> -->
+					<!-- <p>We will be grateful if you can take a minute or two to answer a few questions for us.</p> -->
+					<!-- // EN - OFFLINE -->
+
+					<!-- EN - ONLINE -->
+					<div class="hero_area"><img
+							src="http://static.cdn.responsys.net/i5/responsysimages/content/valuer/lz-thank_you-survey_form-image.jpg"
+							alt="" class="village-header" /></div>
+					<h1>YOUR EXPERIENCE TODAY</h1>
+					<p>In a hurry? Tell us later…</p>
+					<!-- // EN - ONLINE -->
+
+					<!--  // CONTENT_REGION_|CONTENT_INTRODUCTION| -->
+
+					<div class="widget">
+						<form>
+							<!--  CONTENT_REGION_|QUESTION_EXPERIENCE|  -->
+							<fieldset>
+								<legend>How likely are you to recommend the Village to a friend or colleague? <label
+										id="QUESTION_EXPERIENCE_Store-error" class="error"
+										for="QUESTION_EXPERIENCE_Store" style="display: inline-block;"></label></legend>
+								<div class="left_label">
+									<p>Not at all likely</p>
+								</div>
+								<div class="slider_area"> <input id="QUESTION_EXPERIENCE" type="text"
+										data-slider-ticks="[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+										data-slider-ticks-snap-bounds="30"
+										data-slider-ticks-labels="[&quot;0&quot;,&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;]" />
+								</div>
+								<div class="right_label">
+									<p>Extremely likely</p>
+								</div>
+								<input type="text" class="required hiddenfield" name="QUESTION_EXPERIENCE"
+									id="QUESTION_EXPERIENCE_Store" value="" />
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_EXPERIENCE| -->
+
+							<!--  CONTENT_REGION_|QUESTION_SATISFIED|  -->
+							<fieldset>
+								<legend>How satisfied are you with your visit to the Village today? <label
+										id="QUESTION_SATISFIED-error" class="error" for="QUESTION_SATISFIED"
+										style="display: inline-block;"></label>
+								</legend>
+								<div class="radio_btn_holder radio_btn_5_liner">
+									<label for="QUESTION_SATISFIED-1"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Very dissatisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_SATISFIED" id="QUESTION_SATISFIED-1" value="1" />
+									<label for="QUESTION_SATISFIED-2"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Dissatisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_SATISFIED" id="QUESTION_SATISFIED-2" value="2" />
+									<label for="QUESTION_SATISFIED-3"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Neither satisfied nor dissatisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_SATISFIED" id="QUESTION_SATISFIED-3" value="3" />
+									<label for="QUESTION_SATISFIED-4"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Satisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_SATISFIED" id="QUESTION_SATISFIED-4" value="4" />
+									<label for="QUESTION_SATISFIED-5"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Very satisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_SATISFIED" id="QUESTION_SATISFIED-5" value="5" />
+								</div>
+							</fieldset>
+							<!--  // CONTENT_REGION_|QUESTION_SATISFIED|  -->
+
+							<!-- CONTENT_REGION_|QUESTION_MOST_RECENTLY|    -->
+							<fieldset>
+								<legend>How did you most recently hear about the Village? 
+									<label id="QUESTION_MOST_RECENTLY-error" class="error" for="QUESTION_MOST_RECENTLY"
+										style="display: inline-block;"></label>
+								</legend>
+								<div class="radio_btn_holder radio_btn_5_liner">
+									<select name="QUESTION_MOST_RECENTLY" id="QUESTION_MOST_RECENTLY" class="required">
+										<option value="">Please Select</option>
+										<option value="1">Facebook</option>
+										<option value="2">Instagram</option>
+										<option value="3">TikTok</option>
+										<option value="4">Google</option>
+										<option value="5">Email</option>
+										<option value="6">Radio</option>
+										<option value="7">An airline, credit card or travel company</option>
+										<option value="8">Friend or Family (word of mouth)</option>
+										<option value="9">Other</option>
+									</select>
+								</div>
+								<div class="radio_btn_holder radio_btn_3_liner hidden" id="QUESTION_MOST_RECENTLY_OTHER_DIV">
+									<textarea type="text" id="QUESTION_MOST_RECENTLY_OTHER"
+										name="QUESTION_MOST_RECENTLY_OTHER" class=""></textarea>
+									<br />
+									<label id="QUESTION_MOST_RECENTLY_OTHER-error" class="error" for="QUESTION_MOST_RECENTLY_OTHER" style="display: inline-block;"></label>
+									<br />
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_MOST_RECENTLY|    -->
+
+							<!-- CONTENT_REGION_|QUESTION_DECIDE_TO_VISIT|    -->
+							<fieldset>
+								<legend>Why did you decide to visit us today? <label id="QUESTION_DECIDE_TO_VISIT-error"
+										class="error" for="QUESTION_DECIDE_TO_VISIT"
+										style="display: inline-block;"></label></legend>
+								<div class="radio_btn_holder radio_btn_5_liner">
+									<select name="QUESTION_DECIDE_TO_VISIT" id="QUESTION_DECIDE_TO_VISIT"
+										class="required">
+										<option value="">Please Select</option>
+										<option value="1">To enjoy a day of shopping</option>
+										<option value="2">To visit a specific brand</option>
+										<option value="3">To buy a specific product</option>
+										<option value="4">Partner offer</option>
+										<option value="5">Other</option>
+									</select>
+								</div>
+								<div class="radio_btn_holder radio_btn_3_liner hidden"
+									id="QUESTION_DECIDE_TO_VISIT_OTHER_DIV">
+									<textarea type="text" id="QUESTION_DECIDE_TO_VISIT_OTHER"
+										name="QUESTION_DECIDE_TO_VISIT_OTHER" class=""></textarea>
+									<br />
+									<label id="QUESTION_DECIDE_TO_VISIT_OTHER-error" class="error" for="QUESTION_DECIDE_TO_VISIT_OTHER" style="display: inline-block;"></label>
+									<br />
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_DECIDE_TO_VISIT|    -->
+
+							<!--  CONTENT_REGION_|QUESTION_QUEUES| -->
+							<fieldset>
+								<legend>Did you have to queue for any of the boutiques in the Village?<label
+										id="QUESTION_QUEUES-error" class="error" for="QUESTION_QUEUES"
+										style="display: inline-block;"></label></legend>
+								<div class="radio_btn_holder radio_btn_2_liner">
+									<label for="QUESTION_QUEUES-1"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Yes</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_QUEUES" id="QUESTION_QUEUES-1" value="1" />
+									<label for="QUESTION_QUEUES-0"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>No</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_QUEUES" id="QUESTION_QUEUES-0" value="0" />
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_QUEUES| -->
+
+							<!--  CONTENT_REGION_|QUESTION_QUEUES_VISIT_ALL| -->
+							<fieldset id="AREA_VISIT_ALL" class="hiddenOnLoad">
+								<legend>Did you visit all of the boutiques you wished to shop at? <label
+										id="QUESTION_VISIT_ALL-error" class="error" for="QUESTION_VISIT_ALL"
+										style="display: inline-block;"></label></legend>
+								<div class="radio_btn_holder radio_btn_3_liner">
+
+									<label for="QUESTION_VISIT_ALL-2"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Yes, all of them</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_VISIT_ALL" id="QUESTION_VISIT_ALL-2" value="2" />
+
+									<label for="QUESTION_VISIT_ALL-1"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Yes, some of them</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_VISIT_ALL" id="QUESTION_VISIT_ALL-1" value="1" />
+									<label for="QUESTION_VISIT_ALL-0"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>No</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_VISIT_ALL" id="QUESTION_VISIT_ALL-0" value="0" />
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_QUEUES_VISIT_ALL| -->
+
+							<!-- CONTENT_REGION_|QUESTION_VILLAGE_SATISFACTION|  -->
+							<fieldset>
+								<legend>On a scale of 1 to 5 – where 1 is ‘very dissatisfied’ and 5 is ‘very satisfied’
+									– please state how satisfied you were with each of the following aspects of the
+									Village?</legend>
+
+								<div class="table-responsive">
+									<table class="gridQuestion">
+										<tr>
+											<td></td>
+											<td>Very<br>Dissatisfied </td>
+											<td>Dissatisfied</td>
+											<td>Neutral</td>
+											<td>Satisfied</td>
+											<td>Very<br>Satisfied</td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Cleanliness of the Village <label
+													id="QUESTION_VILLAGE_CLEANLINESS-error" class="error"
+													for="QUESTION_VILLAGE_CLEANLINESS"
+													style="display: inline-block;"></label></td>
+											<td><input class="required" type="radio" name="QUESTION_VILLAGE_CLEANLINESS"
+													id="" value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_CLEANLINESS" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_CLEANLINESS" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_CLEANLINESS" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_CLEANLINESS" id=""
+													value="5" /></td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Helpfulness and courtesy of non-boutique
+												staff
+												(hosts, security, housekeeping) <label id="QUESTION_VILLAGE_STAFF-error"
+													class="error" for="QUESTION_VILLAGE_STAFF"
+													style="display: inline-block;"></label></td>
+											<td><input class="required" type="radio" name="QUESTION_VILLAGE_STAFF" id=""
+													value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_STAFF" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_STAFF" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_STAFF" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_STAFF" id=""
+													value="5" /></td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Overall feeling of safety and security
+												(quality
+												of Shopping Protocols, Security) <label
+													id="QUESTION_VILLAGE_AMBIENCE-error" class="error"
+													for="QUESTION_VILLAGE_AMBIENCE"
+													style="display: inline-block;"></label></td>
+											<td><input class="required" type="radio" name="QUESTION_VILLAGE_AMBIENCE"
+													id="" value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_AMBIENCE" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_AMBIENCE" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_AMBIENCE" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_AMBIENCE" id=""
+													value="5" /></td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Overall ambience of the Village <label
+													id="QUESTION_VILLAGE_SEASONAL-error" class="error"
+													for="QUESTION_VILLAGE_SEASONAL"
+													style="display: inline-block;"></label>
+											</td>
+											<td><input class="required" type="radio" name="QUESTION_VILLAGE_SEASONAL"
+													id="" value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_SEASONAL" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_SEASONAL" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_SEASONAL" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_VILLAGE_SEASONAL" id=""
+													value="5" /></td>
+										</tr>
+									</table>
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_VILLAGE_SATISFACTION|  -->
+
+							<!-- CONTENT_REGION_|QUESTION_BOUTIQUE|   -->
+							<fieldset>
+								<legend>On a scale of 1 to 5 – where 1 is ‘very dissatisfied’ and 5 is ‘very satisfied’
+									– please state how satisfied you were with the boutique shopping experience?
+								</legend>
+
+								<div class="table-responsive">
+									<table class="gridQuestion">
+										<tr>
+											<td></td>
+											<td>Very<br>Dissatisfied </td>
+											<td>Dissatisfied</td>
+											<td>Neutral</td>
+											<td>Satisfied</td>
+											<td>Very<br>Satisfied</td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Overall satisfaction with the boutiques in
+												the
+												Village <label id="QUESTION_BOUTIQUE_SATISFACTION-error" class="error"
+													for="QUESTION_BOUTIQUE_SATISFACTION"
+													style="display: inline-block;"></label></td>
+											<td><input class="required" type="radio"
+													name="QUESTION_BOUTIQUE_SATISFACTION" id="" value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_SATISFACTION" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_SATISFACTION" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_SATISFACTION" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_SATISFACTION" id=""
+													value="5" /></td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Range of boutiques (womenswear, menswear,
+												homeware, beauty) <label id="QUESTION_BOUTIQUE_RANGE-error"
+													class="error" for="QUESTION_BOUTIQUE_RANGE"
+													style="display: inline-block;"></label>
+											</td>
+											<td><input class="required" type="radio" name="QUESTION_BOUTIQUE_RANGE"
+													id="" value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_RANGE" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_RANGE" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_RANGE" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_RANGE" id=""
+													value="5" /></td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Range of product (size, style, colour) <label
+													id="QUESTION_BOUTIQUE_RANGE_PROD-error" class="error"
+													for="QUESTION_BOUTIQUE_RANGE_PROD"
+													style="display: inline-block;"></label></td>
+											<td><input class="required" type="radio" name="QUESTION_BOUTIQUE_RANGE_PROD"
+													id="" value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_RANGE_PROD" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_RANGE_PROD" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_RANGE_PROD" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_RANGE_PROD" id=""
+													value="5" /></td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Seasonal relevance of product <label
+													id="QUESTION_BOUTIQUE_SEASON-error" class="error"
+													for="QUESTION_BOUTIQUE_SEASON"
+													style="display: inline-block;"></label>
+											</td>
+											<td><input class="required" type="radio" name="QUESTION_BOUTIQUE_SEASON"
+													id="" value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_SEASON" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_SEASON" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_SEASON" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_SEASON" id=""
+													value="5" /></td>
+										</tr>
+										<tr>
+											<td class="multiQuestionTitle">Helpfulness and courtesy of retail staff
+												overall
+												<label id="QUESTION_BOUTIQUE_STAFF-error" class="error"
+													for="QUESTION_BOUTIQUE_STAFF"
+													style="display: inline-block;"></label>
+											</td>
+											<td><input class="required" type="radio" name="QUESTION_BOUTIQUE_STAFF"
+													id="" value="1" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_STAFF" id=""
+													value="2" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_STAFF" id=""
+													value="3" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_STAFF" id=""
+													value="4" /></td>
+											<td><input class="" type="radio" name="QUESTION_BOUTIQUE_STAFF" id=""
+													value="5" /></td>
+										</tr>
+
+									</table>
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_BOUTIQUE|   -->
+
+							<!-- CONTENT_REGION_|QUESTION_FAB|   -->
+							<fieldset>
+								<legend>How satisfied are you with the food and beverage options in the Village today?
+									<label id="QUESTION_FAB-error" class="error" for="QUESTION_FAB"
+										style="display: inline-block;"></label>
+								</legend>
+								<div class="radio_btn_holder radio_btn_6_liner">
+									<label for="QUESTION_FAB-1"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Very dissatisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_FAB" id="QUESTION_FAB-1" value="1" />
+
+									<label for="QUESTION_FAB-2"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Dissatisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_FAB" id="QUESTION_FAB-2" value="2" />
+
+									<label for="QUESTION_FAB-3"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Neither satisfied nor dissatisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_FAB" id="QUESTION_FAB-3" value="3" />
+
+									<label for="QUESTION_FAB-4"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Satisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_FAB" id="QUESTION_FAB-4" value="4" />
+
+									<label for="QUESTION_FAB-5"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Very satisfied</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_FAB" id="QUESTION_FAB-5" value="5" />
+
+									<label for="QUESTION_FAB-6"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>N/A</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_FAB" id="QUESTION_FAB-6" value="6" />
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_FAB|   -->
+
+							<!-- CONTENT_REGION_|QUESTION_TIME|    -->
+							<fieldset>
+								<legend>How much time have you spent with us in the Village today?<label
+										id="QUESTION_TIME-error" class="error" for="QUESTION_TIME"
+										style="display: inline-block;"></label></legend>
+								<div class="row">
+									<div class="col-xs-6" id="QUESTION_TIME_ITEM">
+										<input type="checkbox" name="QUESTION_TIME" id="QUESTION_TIME-1"
+											value="1">
+										<label for="QUESTION_TIME-1">30 minutes</label>
+									</div>
+
+									<div class="col-xs-6" id="QUESTION_TIME_ITEM">
+										<input type="checkbox" name="QUESTION_TIME" id="QUESTION_TIME-2"
+											value="2">
+										<label for="QUESTION_TIME-2">1 hour</label>
+									</div>
+
+									<div class="col-xs-6" id="QUESTION_TIME_ITEM">
+										<input type="checkbox" name="QUESTION_TIME" id="QUESTION_TIME-3"
+											value="3">
+										<label for="QUESTION_TIME-3">2 hours</label>
+									</div>
+
+									<div class="col-xs-6" id="QUESTION_TIME_ITEM">
+										<input type="checkbox" name="QUESTION_TIME" id="QUESTION_TIME-4"
+											value="4">
+										<label for="QUESTION_TIME-4">3 hours</label>
+									</div>
+
+									<div class="col-xs-6" id="QUESTION_TIME_ITEM">
+										<input type="checkbox" name="QUESTION_TIME" id="QUESTION_TIME-5"
+											value="5">
+										<label for="QUESTION_TIME-5">4 hours</label>
+									</div>
+									
+									<div class="col-xs-6" id="QUESTION_TIME_ITEM">
+										<input type="checkbox" name="QUESTION_TIME" id="QUESTION_TIME-6"
+											value="6">
+										<label for="QUESTION_TIME-6">5 hours</label>
+									</div>
+									
+									<div class="col-xs-6" id="QUESTION_TIME_ITEM">
+										<input type="checkbox" name="QUESTION_TIME" id="QUESTION_TIME-7"
+											value="7">
+										<label for="QUESTION_TIME-7">6 hours</label>
+									</div>
+									
+									<div class="col-xs-6" id="QUESTION_TIME_ITEM">
+										<input type="checkbox" name="QUESTION_TIME" id="QUESTION_TIME-8"
+											value="8">
+										<label for="QUESTION_TIME-8">7 hours and more</label>
+									</div>
+								</div>
+								
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_TIME|    -->
+
+							<!-- CONTENT_REGION_|QUESTION_BUDGET|    -->
+							<fieldset>
+								<legend>Compared to your original budget, how much did you spend in the Village today?
+									<label id="QUESTION_BUDGET-error" class="error" for="QUESTION_BUDGET"
+										style="display: inline-block;"></label>
+								</legend>
+								<div class="radio_btn_holder radio_btn_5_liner">
+									<label for="QUESTION_BUDGET-1"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Significantly less</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_BUDGET" id="QUESTION_BUDGET-1" value="1" />
+									<label for="QUESTION_BUDGET-2"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Less</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_BUDGET" id="QUESTION_BUDGET-2" value="2" />
+									<label for="QUESTION_BUDGET-3"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>As expected</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_BUDGET" id="QUESTION_BUDGET-3" value="3" />
+									<label for="QUESTION_BUDGET-4"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>More</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_BUDGET" id="QUESTION_BUDGET-4" value="4" />
+									<label for="QUESTION_BUDGET-5"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Significantly more</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_BUDGET" id="QUESTION_BUDGET-5" value="5" />
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_BUDGET|   -->
+
+							<!-- CONTENT_REGION_|QUESTION_OPEN_TEXT| -->
+							<fieldset>
+								<legend>Is there anything else you would like to share with us? <label
+										id="QUESTION_1-error" class="error" for="QUESTION_1"
+										style="display: inline-block;"></label></legend>
+								<div class="radio_btn_holder radio_btn_3_liner">
+									<textarea type="text" id="QUESTION_OPEN_TEXT" name="QUESTION_OPEN_TEXT"
+										class=""></textarea>
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_OPEN_TEXT|  -->
+
+							<!-- CONTENT_REGION_|QUESTION_COUNTY_OF_RESIDENCE|  -->
+							<fieldset>
+								<legend>Where is your country of residence? <label
+										id="QUESTION_COUNTY_OF_RESIDENCE-error" class="error"
+										for="QUESTION_COUNTY_OF_RESIDENCE" style="display: inline-block;"></label>
+								</legend>
+								<div class="radio_btn_holder radio_btn_5_liner">
+									<select name="QUESTION_COUNTY_OF_RESIDENCE" id="QUESTION_COUNTY_OF_RESIDENCE"
+										class="required">
+										<option value="">Please Select</option>
+										<optgroup>
+											<option value='17'>Belgium</option>
+											<option value='62'>France</option>
+											<option value='66'>Germany</option>
+											<option value='84'>Ireland</option>
+											<option value='86'>Italy</option>
+											<option value='168'>Spain</option>
+											<option value='190'>United Kingdom</option>
+										</optgroup>
+										<optgroup>
+											<option value='1'>Afghanistan</option>
+											<option value='2'>Albania</option>
+											<option value='3'>Algeria</option>
+											<option value='4'>Andorra</option>
+											<option value='5'>Angola</option>
+											<option value='6'>Antigua and Barbuda</option>
+											<option value='7'>Argentina</option>
+											<option value='8'>Armenia</option>
+											<option value='9'>Australia</option>
+											<option value='10'>Austria</option>
+											<option value='11'>Azerbaijan</option>
+											<option value='12'>Bahamas</option>
+											<option value='13'>Bahrain</option>
+											<option value='14'>Bangladesh</option>
+											<option value='15'>Barbados</option>
+											<option value='16'>Belarus</option>
+											<option value='18'>Belize</option>
+											<option value='19'>Benin</option>
+											<option value='20'>Bhutan</option>
+											<option value='21'>Bolivia</option>
+											<option value='22'>Bosnia and Herzegovina</option>
+											<option value='23'>Botswana</option>
+											<option value='24'>Brazil</option>
+											<option value='25'>Brunei</option>
+											<option value='26'>Bulgaria</option>
+											<option value='27'>Burkina Faso</option>
+											<option value='28'>Burundi</option>
+											<option value='29'>Côte d'Ivoire</option>
+											<option value='30'>Cabo Verde</option>
+											<option value='31'>Cambodia</option>
+											<option value='32'>Cameroon</option>
+											<option value='33'>Canada</option>
+											<option value='34'>Central African Republic</option>
+											<option value='35'>Chad</option>
+											<option value='36'>Chile</option>
+											<option value='37'>China (Mainland)</option>
+											<option value='38'>Colombia</option>
+											<option value='39'>Comoros</option>
+											<option value='40'>Congo (Congo-Brazzaville)</option>
+											<option value='41'>Costa Rica</option>
+											<option value='42'>Croatia</option>
+											<option value='43'>Cuba</option>
+											<option value='44'>Cyprus</option>
+											<option value='45'>Czechia (Czech Republic)</option>
+											<option value='46'>Democratic Republic of the Congo</option>
+											<option value='47'>Denmark</option>
+											<option value='48'>Djibouti</option>
+											<option value='49'>Dominica</option>
+											<option value='50'>Dominican Republic</option>
+											<option value='51'>East Timor</option>
+											<option value='52'>Ecuador</option>
+											<option value='53'>Egypt</option>
+											<option value='54'>El Salvador</option>
+											<option value='55'>Equatorial Guinea</option>
+											<option value='56'>Eritrea</option>
+											<option value='57'>Estonia</option>
+											<option value='58'>Eswatini (fmr. 'Swaziland')</option>
+											<option value='59'>Ethiopia</option>
+											<option value='60'>Fiji</option>
+											<option value='61'>Finland</option>
+											<option value='63'>Gabon</option>
+											<option value='64'>Gambia</option>
+											<option value='65'>Georgia</option>
+											<option value='67'>Ghana</option>
+											<option value='68'>Greece</option>
+											<option value='69'>Grenada</option>
+											<option value='70'>Guatemala</option>
+											<option value='71'>Guinea</option>
+											<option value='72'>Guinea-Bissau</option>
+											<option value='73'>Guyana</option>
+											<option value='74'>Haiti</option>
+											<option value='75'>Holy See</option>
+											<option value='76'>Honduras</option>
+											<option value='77'>Hong Kong</option>
+											<option value='78'>Hungary</option>
+											<option value='79'>Iceland</option>
+											<option value='80'>India</option>
+											<option value='81'>Indonesia</option>
+											<option value='82'>Iran</option>
+											<option value='83'>Iraq</option>
+											<option value='85'>Israel</option>
+											<option value='87'>Jamaica</option>
+											<option value='88'>Japan</option>
+											<option value='89'>Jordan</option>
+											<option value='90'>Kazakhstan</option>
+											<option value='91'>Kenya</option>
+											<option value='92'>Kiribati</option>
+											<option value='93'>Kuwait</option>
+											<option value='94'>Kyrgyzstan</option>
+											<option value='95'>Laos</option>
+											<option value='96'>Latvia</option>
+											<option value='97'>Lebanon</option>
+											<option value='98'>Lesotho</option>
+											<option value='99'>Liberia</option>
+											<option value='100'>Libya</option>
+											<option value='101'>Liechtenstein</option>
+											<option value='102'>Lithuania</option>
+											<option value='103'>Luxembourg</option>
+											<option value='104'>Macau</option>
+											<option value='105'>Madagascar</option>
+											<option value='106'>Malawi</option>
+											<option value='107'>Malaysia</option>
+											<option value='108'>Maldives</option>
+											<option value='109'>Mali</option>
+											<option value='110'>Malta</option>
+											<option value='111'>Marshall Islands</option>
+											<option value='112'>Mauritania</option>
+											<option value='113'>Mauritius</option>
+											<option value='114'>Mexico</option>
+											<option value='115'>Micronesia</option>
+											<option value='116'>Moldova</option>
+											<option value='117'>Monaco</option>
+											<option value='118'>Mongolia</option>
+											<option value='119'>Montenegro</option>
+											<option value='120'>Morocco</option>
+											<option value='121'>Mozambique</option>
+											<option value='122'>Myanmar (formerly Burma)</option>
+											<option value='123'>Namibia</option>
+											<option value='124'>Nauru</option>
+											<option value='125'>Nepal</option>
+											<option value='126'>Netherlands</option>
+											<option value='127'>New Zealand</option>
+											<option value='128'>Nicaragua</option>
+											<option value='129'>Niger</option>
+											<option value='130'>Nigeria</option>
+											<option value='131'>North Korea</option>
+											<option value='132'>North Macedonia</option>
+											<option value='133'>Norway</option>
+											<option value='134'>Oman</option>
+											<option value='135'>Pakistan</option>
+											<option value='136'>Palau</option>
+											<option value='137'>Palestine State</option>
+											<option value='138'>Panama</option>
+											<option value='139'>Papua New Guinea</option>
+											<option value='140'>Paraguay</option>
+											<option value='141'>Peru</option>
+											<option value='142'>Philippines</option>
+											<option value='143'>Poland</option>
+											<option value='144'>Portugal</option>
+											<option value='145'>Qatar</option>
+											<option value='146'>Romania</option>
+											<option value='147'>Russia</option>
+											<option value='148'>Rwanda</option>
+											<option value='149'>Saint Kitts and Nevis</option>
+											<option value='150'>Saint Lucia</option>
+											<option value='151'>Saint Vincent and the Grenadines</option>
+											<option value='152'>Samoa</option>
+											<option value='153'>San Marino</option>
+											<option value='154'>Sao Tome and Principe</option>
+											<option value='155'>Saudi Arabia</option>
+											<option value='156'>Senegal</option>
+											<option value='157'>Serbia</option>
+											<option value='158'>Seychelles</option>
+											<option value='159'>Sierra Leone</option>
+											<option value='160'>Singapore</option>
+											<option value='161'>Slovakia</option>
+											<option value='162'>Slovenia</option>
+											<option value='163'>Solomon Islands</option>
+											<option value='164'>Somalia</option>
+											<option value='165'>South Africa</option>
+											<option value='166'>South Korea</option>
+											<option value='167'>South Sudan</option>
+											<option value='169'>Sri Lanka</option>
+											<option value='170'>Sudan</option>
+											<option value='171'>Suriname</option>
+											<option value='172'>Sweden</option>
+											<option value='173'>Switzerland</option>
+											<option value='174'>Syria</option>
+											<option value='175'>Taiwan</option>
+											<option value='176'>Tajikistan</option>
+											<option value='177'>Tanzania</option>
+											<option value='178'>Thailand</option>
+											<option value='179'>Timor-Leste</option>
+											<option value='180'>Togo</option>
+											<option value='181'>Tonga</option>
+											<option value='182'>Trinidad and Tobago</option>
+											<option value='183'>Tunisia</option>
+											<option value='184'>Turkey</option>
+											<option value='185'>Turkmenistan</option>
+											<option value='186'>Tuvalu</option>
+											<option value='187'>Uganda</option>
+											<option value='188'>Ukraine</option>
+											<option value='189'>United Arab Emirates</option>
+											<option value='191'>United States of America</option>
+											<option value='192'>Uruguay</option>
+											<option value='193'>Uzbekistan</option>
+											<option value='194'>Vanuatu</option>
+											<option value='195'>Venezuela</option>
+											<option value='196'>Vietnam</option>
+											<option value='197'>Yemen</option>
+											<option value='198'>Zambia</option>
+											<option value='199'>Zimbabwe</option>
+											<option value='200'>Other</option>
+										</optgroup>
+									</select>
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_COUNTY_OF_RESIDENCE| -->
+
+							<!-- CONTENT_REGION_|QUESTION_AGE|-->
+							<fieldset>
+								<legend>Please select your age group: <label id="QUESTION_AGE-error" class="error"
+										for="QUESTION_AGE" style="display: inline-block;"></label></legend>
+								<div class="radio_btn_holder radio_btn_5_liner">
+									<select name="QUESTION_AGE" id="QUESTION_AGE" class="required">
+										<option value="">Please Select</option>
+										<option value='1'>&lt;25</option>
+										<option value='2'>25–34</option>
+										<option value='3'>35–44</option>
+										<option value='4'>45–54</option>
+										<option value='5'>55–65</option>
+										<option value='6'>66++</option>
+										<option value='7'>Prefer not to say</option>
+									</select>
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_AGE| -->
+
+							<!-- CONTENT_REGION_|QUESTION_GENDER| -->
+							<fieldset>
+								<legend>Please select your gender <label id="QUESTION_GENDER-error" class="error"
+										for="QUESTION_GENDER" style="display: inline-block;"></label></legend>
+								<div class="radio_btn_holder radio_btn_4_liner">
+
+									<label for="QUESTION_GENDER-1"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Male</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_GENDER" id="QUESTION_GENDER-1" value="1" />
+
+									<label for="QUESTION_GENDER-2"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Female</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_GENDER" id="QUESTION_GENDER-2" value="2" />
+
+									<label for="QUESTION_GENDER-3"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Non-binary or other </div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_GENDER" id="QUESTION_GENDER-3" value="3" />
+
+									<label for="QUESTION_GENDER-0"
+										class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label emailwrapto99pc padding0 padding-TB-18">
+										<div>Prefer not to say</div>
+									</label>
+									<input type="radio"
+										class="radiobtn ui-checkboxradio ui-helper-hidden-accessible required otherTAB limited3-checkbox"
+										name="QUESTION_GENDER" id="QUESTION_GENDER-0" value="0" />
+
+								</div>
+							</fieldset>
+							<!-- // CONTENT_REGION_|QUESTION_GENDER| -->
+							<!-- CONTENT_REGION_|SUBMIT_BUTTON| -->
+							<button class="button inverted right submitBtn" type="submit" value="Submit"
+								id="">Submit</button>
+							<!-- // CONTENT_REGION_|SUBMIT_BUTTON| -->
+
+							<input type="hidden" name="EMAIL_ADDRESS_" id="EMAIL_ADDRESS_" value="" />
+							<input type="hidden" name="VILLAGE" id="VILLAGE" value="" />
+							<input type="hidden" name="LANG_LOCALE" id="LANG_LOCALE" value="" />
+							<input type="hidden" name="SURVEY_DATE" id="SURVEY_DATE" value="" />
+							<input type="hidden" name="SURVEY_TIME" id="SURVEY_TIME" value="" />
+							<input type="hidden" name="SURVEY_DATE_TIME" id="SURVEY_DATE_TIME" value="" />
+							<input type="hidden" name="SURVEY_TYPE" id="SURVEY_TYPE" value="" />
+						</form>
+					</div>
+				</section>
+				<!-- Centralised website footer -->
+				<!-- $document(/contentlibrary/centralised content/centralised snippets/,website_footer.htm, pairs(PRIMARY_VILLAGE, lookup(VILLAGE), LANG_LOCALE, EN))$                      -->
+				<footer>
+					<div class="footer_logo">
+						<span width="187px" fill="sagedark" class="g5jhfb-2 g5jhfb-3 hoJMqa">
+							<svg width="180" height="42" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.757 18.512c2.704-3.033 1.325-5.244-1.261-6.228 1.854 1.916 2.053 3.31 1.261 6.228zm-2.775 1.948c1.488.953 3.506.334 3.744-1.741-.783.926-2.298 1.617-3.744 1.74zm-2.54-1.958c2.639.76 4.918-.865 4.63-3.45-.787-.919-1.894-1.274-3.524-.97 1.468-.042 2.526.937 2.907 2.104-.333.44-.815.835-1.463 1.211-1.295-.233-1.844-.561-2.477-1.035.53-.453 1.525-.927 2.677-1.005-1.489-.363-2.799-.155-3.845.376.423 1.002 1.284 1.753 2.384 2.277-.39.164-.814.328-1.288.492zm-2.776-1.421c.729 2.293 2.263 3.51 4.346 4.23l-.03-1.392c-1.714-.479-2.759-1.177-4.316-2.838zm4.769-4.395c-2.408-.56-4.513.596-5.258 3.024 1.576-1.517 3.236-2.384 5.258-3.024zm8.326 6.14c.14.263.17.54-.057.835-.467.607-.949 1.69-1.271 2.897-.232.868-1.045 1.411-2.122 1.114-1.51-.423-2.83-1.105-3.94-2.127.183.551.58 1.102 1.2 1.551.274.196.285.822-.334.916-.97.154-1.88.81-2.49 1.616-.71.928-1.753 1-2.631.28-.946-.774-1.742-1.622-2.223-2.656-.125.46.2 1.524-.526 1.244a6.9 6.9 0 0 1-1.584-.887c-.511-.375-.652-.89-.175-1.364.477-.465.795-1.006.746-1.494 1.315 1.358 2.644 2.182 4.624 2.764-3.272-2.177-4.516-4.06-5.437-6.448-.297-.77-.243-1.299.195-1.62.688-.498 1.35-1.32 1.893-2.603-.514.524-.802.69-1.237.84.599-.691 1.028-1.472 1.533-2.116.501-.649 1.106-1.146 2.155-1.131 1.178.018 2.487.118 3.78.364-.467-.26-.894-.45-1.377-.677-.088-1.272 1.261-1.343 1.878-.812.79.685 1.653 1.12 2.71 1.29 1.67.27 2.84 1.696 2.056 2.155-.454.265-.798.44-1.212.664 1.306-.052 2.426-.492 3.028.254.603.749 1.014 1.706.886 2.528a1.67 1.67 0 0 1-.881 1.25c-.232.122-.477.472-.204.63.271.157.876.487 1.017.744zM0 24.48c3.212 8.638 14.347 6.854 14.525-.664C16.1 32.139 3.075 36.553 0 24.48zm8.36 4.281c-1.998.325-4.13-.626-4.667-2.372 1.24.454 3.351-.61 4.584 1.209-.555-.497-1.044-.7-2.004-.6 1.35.256 1.843.711 2.086 1.763zm11.24-5.748c.467-1.276 1.035-2.203 2.382-2.465-.658-.25-1.306-.136-1.835.493 1.113-2.127 2.919-.687 4.052-1.225-.612 2.087-2.208 3.26-4.599 3.197zm-4.598 8.493c.927-.56 1.838-.635 3.383.137-.543-.853-1.307-1.124-2.26-1.155 2.45-.882 2.79 1.47 3.987 1.854-1.688 1.275-3.98.778-5.11-.836zm1.425-5.11c2.187-3.296 6.581-3.298 10.211.355-1.265-.005-1.847.54-3.107 1.342-2.478 1.58-4.694 1.719-7.393.487-1.028.773-1.907 1.797-2.534 3.204.776-5.036 5.991-6.623 9.536-6.329-2.426-.926-4.613-.662-6.713.94zm162.463 5.593h-.27l-6.176-6.715v4.363c0 1.615.133 1.94 1.407 1.94v.307c-.52 0-1.051-.026-1.572-.026-.519 0-1.05.013-1.568.026v-.306c.719 0 1.261 0 1.261-1.486v-4.7c0-1.008-.435-1.37-1.452-1.37v-.304c.37.011.721.024 1.087.024.32 0 .65-.024.97-.024.483.713 1.58 1.777 2.927 3.252 1.001 1.1 2.112 2.258 2.914 3.122v-4.655c0-1.076-.247-1.403-1.428-1.415v-.304c.544.011 1.098.024 1.641.024.46 0 .909-.024 1.369-.024v.304c-.72 0-1.11.059-1.11 1.204v6.763zm-13.387-.305c1.723 0 2.81-1.473 2.81-3.591 0-1.779-1.039-4.177-3.058-4.177-1.723 0-2.81 1.475-2.81 3.593 0 1.778 1.04 4.175 3.058 4.175zm-.105-8.142c2.36 0 4.213 1.99 4.213 4.21 0 2.142-1.663 4.306-4.25 4.306-2.36 0-4.213-1.988-4.213-4.21 0-2.142 1.663-4.306 4.25-4.306zm-7.57 1.322c0-.818-.449-.83-1.075-.842v-.304c.556.011 1.098.024 1.629.024.543 0 1.086-.013 1.676-.024v.304c-.624.012-1.074.024-1.074.842v5.872c0 .82.45.832 1.074.842v.306c-.567 0-1.074-.026-1.594-.026-.566 0-1.12.013-1.711.026v-.306c.626-.01 1.075-.022 1.075-.842v-5.872zm-2.276.386h-.318c-.037-.632 0-1.053-.946-1.053h-1.793v6.539c0 .82.448.832 1.074.842v.306c-.566 0-1.074-.026-1.596-.026-.566 0-1.12.013-1.709.026v-.306c.625-.01 1.073-.022 1.073-.842v-6.54h-1.546c-1.062 0-1.11.294-1.311 1.054h-.306l.13-1.86h.236c.129.316.449.328.745.328h5.358c.425 0 .72-.105.767-.328h.247l-.105 1.86zm-8.55.585h-.294c-.226-1.369-1.205-1.919-2.527-1.919-1.358 0-3.329.901-3.329 3.709 0 2.363 1.7 4.059 3.518 4.059 1.168 0 2.137-.795 2.373-2.023l.27.07-.27 1.708c-.497.304-1.83.62-2.61.62-2.763 0-4.508-1.767-4.508-4.399 0-2.398 2.16-4.118 4.473-4.118.956 0 1.877.305 2.786.62l.117 1.673zm-12.824 1.58h1.558c.956 0 .956-.738.991-1.007h.236c-.024.259-.047.89-.047 1.31 0 .375.059.925.047 1.299h-.236c0-1.123-.378-1.123-1.287-1.123h-1.262v1.989c0 1.298.047 1.627 1.215 1.627h.732c1.156-.06 1.676-.212 2.135-1.464l.285.046c-.19.587-.366 1.184-.485 1.792-1.18 0-2.36-.026-3.54-.026-.874 0-1.748 0-2.622.026v-.306c1.027 0 1.121-.187 1.121-1.321v-5.194c0-.96-.188-1.006-1.12-1.04v-.305c.79.024 1.592.024 2.383.024 1.134 0 2.257 0 3.4-.024v1.742l-.234.059c-.179-1.098-.71-1.428-1.889-1.428h-1.381v3.324zm-3.717 4.469c-1.003-.026-1.996-.026-2.998-.026-1.05 0-2.09 0-3.128.026v-.306c.59.036 1.074-.117 1.074-.783v-5.93c0-.819-.448-.831-1.074-.843v-.304c.554.011 1.098.024 1.63.024.542 0 1.084-.013 1.674-.024v.304c-.625.012-1.072.024-1.072.842v5.416c0 .867.187 1.23 1.863 1.23 1.37 0 1.842-.33 2.207-1.464l.261.046-.437 1.792zm-7.59 0c-1.003-.026-1.996-.026-2.998-.026-1.051 0-2.09 0-3.129.026v-.306c.592.036 1.075-.117 1.075-.783v-5.93c0-.819-.449-.831-1.075-.843v-.304c.555.011 1.098.024 1.63.024.542 0 1.084-.013 1.676-.024v.304c-.626.012-1.074.024-1.074.842v5.416c0 .867.189 1.23 1.865 1.23 1.369 0 1.84-.33 2.207-1.464l.26.046-.436 1.792zm-11.405-.2c1.724 0 2.81-1.473 2.81-3.591 0-1.779-1.04-4.177-3.057-4.177-1.724 0-2.81 1.475-2.81 3.593 0 1.778 1.04 4.175 3.057 4.175zm-.107-8.142c2.36 0 4.214 1.99 4.214 4.21 0 2.142-1.664 4.306-4.249 4.306-2.36 0-4.214-1.988-4.214-4.21 0-2.142 1.665-4.306 4.249-4.306zm-5.665 2.293h-.296c-.223-1.369-1.202-1.919-2.525-1.919-1.357 0-3.33.901-3.33 3.709 0 2.363 1.701 4.059 3.52 4.059 1.167 0 2.136-.795 2.372-2.023l.272.07-.272 1.708c-.496.304-1.83.62-2.61.62-2.76 0-4.508-1.767-4.508-4.399 0-2.398 2.16-4.118 4.474-4.118.957 0 1.877.305 2.786.62l.117 1.673zm-12.224-.023h-.26c-.306-1.357-1.452-1.896-2.773-1.896-2.09 0-3.295 1.814-3.295 3.722 0 2.023 1.251 4.046 3.376 4.046.933 0 1.418-.327 1.594-.456v-1.744c0-.853-.448-.853-1.073-.853v-.304c.553.012 1.097.024 1.627.024.544 0 1.087-.012 1.442-.024v.304c-.39 0-.838 0-.838.853v1.533l.176.176v.198c-.956.34-2.042.667-3.07.667-3.317 0-4.532-2.574-4.532-4.246 0-2.456 1.924-4.27 4.391-4.27 1.051 0 2.054.268 3.035.632l.2 1.638zm-9.733 6.177h-.27l-6.176-6.715v4.363c0 1.615.13 1.94 1.406 1.94v.307c-.519 0-1.05-.026-1.57-.026s-1.051.013-1.57.026v-.306c.72 0 1.263 0 1.263-1.486v-4.7c0-1.008-.437-1.37-1.453-1.37v-.304c.367.011.72.024 1.086.024.32 0 .65-.024.969-.024.484.713 1.581 1.777 2.928 3.252 1.003 1.1 2.112 2.258 2.915 3.122v-4.655c0-1.076-.249-1.403-1.429-1.415v-.304c.543.011 1.098.024 1.642.024.46 0 .908-.024 1.37-.024v.304c-.721 0-1.111.059-1.111 1.204v6.763zm-11.681-7.125c0-.818-.448-.83-1.074-.842v-.304c.554.011 1.098.024 1.628.024.544 0 1.087-.013 1.676-.024v.304c-.625.012-1.074.024-1.074.842v5.872c0 .82.45.832 1.074.842v.306c-.566 0-1.074-.026-1.593-.026-.566 0-1.12.013-1.711.026v-.306c.626-.01 1.074-.022 1.074-.842v-5.872zm-7.712-1.146c.532.024 1.064.024 1.594.024.402 0 .814-.024 1.311-.024 1.215 0 2.962.503 2.962 2.328 0 1.38-1.298 2.34-2.537 2.34-.236 0-.425-.013-.603-.013v-.386c.154.025.295.025.449.025 1.015 0 1.464-.995 1.464-1.838 0-1.626-1.145-2.083-1.925-2.083-.176 0-.389.012-.519.036v6.609c0 .82.45.832 1.087.842v.306c-.58 0-1.087-.026-1.606-.026-.566 0-1.122.013-1.712.026v-.306c.627-.01 1.074-.022 1.074-.842v-5.567c0-.901-.153-1.147-1.04-1.147v-.304zm-6.654 0c.53.024 1.06.024 1.593.024.401 0 .815-.024 1.31-.024 1.216 0 2.963.503 2.963 2.328 0 1.38-1.299 2.34-2.539 2.34-.236 0-.424-.013-.602-.013v-.386c.155.025.296.025.45.025 1.015 0 1.464-.995 1.464-1.838 0-1.626-1.146-2.083-1.925-2.083a3.3 3.3 0 0 0-.52.036v6.609c0 .82.45.832 1.086.842v.306c-.578 0-1.085-.026-1.604-.026-.568 0-1.122.013-1.712.026v-.306c.625-.01 1.074-.022 1.074-.842v-5.567c0-.901-.154-1.147-1.038-1.147v-.304zm-5.254 7.966c1.724 0 2.81-1.473 2.81-3.591 0-1.779-1.039-4.177-3.058-4.177-1.723 0-2.81 1.475-2.81 3.593 0 1.778 1.04 4.175 3.058 4.175zm-.106-8.142c2.36 0 4.214 1.99 4.214 4.21 0 2.142-1.664 4.306-4.25 4.306-2.36 0-4.214-1.988-4.214-4.21 0-2.142 1.664-4.306 4.25-4.306zm-7.59 3.873v-2.55c0-.819-.448-.831-1.075-.843v-.304c.627.011 1.182.024 1.748.024.506 0 1.027-.024 1.559-.024v.304c-.627.012-1.076.024-1.076.842v5.872c0 .82.45.832 1.076.842v.306c-.532-.013-1.063-.026-1.594-.026-.556 0-1.099.013-1.713.026v-.306c.627-.01 1.074-.022 1.074-.842v-2.842H39.97v2.842c0 .82.45.832 1.076.842v.306c-.568 0-1.076-.026-1.595-.026-.566 0-1.121.013-1.712.026v-.306c.627-.01 1.076-.022 1.076-.842v-5.872c0-.818-.45-.83-1.076-.842v-.304c.555.011 1.099.024 1.63.024.544 0 1.086-.013 1.677-.024v.304c-.627.012-1.076.024-1.076.842v2.551h4.77zm-12.877 2.537h.272c.201.877.862 1.732 1.842 1.732.91 0 1.617-.63 1.617-1.555 0-2.177-3.494-1.533-3.494-4.294 0-1.51 1.086-2.293 2.526-2.293.483 0 .968.105 1.44.176l.189 1.496h-.272c-.13-.817-.672-1.298-1.523-1.298-.897 0-1.416.644-1.416 1.497 0 2.178 3.636 1.58 3.636 4.271 0 1.52-1.382 2.374-2.775 2.374-.613 0-1.25-.14-1.805-.397l-.237-1.709zM175.467 13.2h1.616c.992 0 .992-.764 1.03-1.043h.244c-.024.267-.048.923-.048 1.36 0 .389.06.96.048 1.348h-.245c0-1.165-.391-1.165-1.334-1.165h-1.311v2.064c0 1.347.048 1.687 1.263 1.687h.756c1.203-.062 1.742-.22 2.22-1.518l.293.048c-.197.607-.38 1.226-.502 1.859-1.225 0-2.45-.025-3.676-.025-.906 0-1.813 0-2.72.025v-.317c1.066 0 1.164-.194 1.164-1.372v-5.39c0-.996-.195-1.044-1.164-1.08v-.316c.821.024 1.655.024 2.474.024 1.178 0 2.34 0 3.53-.024v1.809l-.245.06c-.184-1.14-.735-1.48-1.96-1.48h-1.433v3.446zm-3.811-1.662h-.27c-.318-1.407-1.506-1.967-2.878-1.967-2.169 0-3.419 1.881-3.419 3.86 0 2.1 1.299 4.202 3.504 4.202.97 0 1.47-.34 1.655-.474v-1.81c0-.885-.467-.885-1.115-.885v-.314c.576.011 1.139.024 1.691.024.561 0 1.126-.013 1.494-.024v.314c-.405 0-.87 0-.87.885v1.592l.185.183v.205c-.994.352-2.121.691-3.186.691-3.443 0-4.705-2.67-4.705-4.406 0-2.549 1.995-4.43 4.558-4.43 1.09 0 2.13.277 3.148.655l.208 1.7zM157.5 14.16h2.523l-1.31-3.57h-.025l-1.188 3.57zm4.165 1.263c.172.474.503 1.504.699 1.772.183.243.55.327.942.327v.317c-.465 0-.942-.025-1.408-.025-.6 0-1.189.012-1.788.025v-.317h.22c.305 0 .674-.06.674-.399 0-.134-.098-.474-.184-.705l-.613-1.76h-2.878l-.27.848c-.16.512-.33 1.07-.33 1.446 0 .57.404.546.831.57h.283v.317c-.478 0-.968-.025-1.446-.025-.49 0-.991.012-1.482.025v-.317c.747-.084.882-.182 1.188-.86.196-.439.342-.912.502-1.362l1.569-4.333c.098-.28.257-.73.257-1.093 0-.122 0-.218-.024-.316.256-.122.538-.256.71-.534h.208l2.34 6.399zm-8.04 2.416c-1.04-.025-2.07-.025-3.11-.025-1.09 0-2.168 0-3.247.025v-.317c.612.036 1.115-.122 1.115-.812v-6.158c0-.848-.466-.86-1.115-.872v-.316c.575.013 1.14.024 1.691.024.563 0 1.127-.011 1.739-.024v.316c-.648.012-1.115.024-1.115.872v5.623c0 .897.197 1.275 1.936 1.275 1.421 0 1.911-.34 2.291-1.518l.27.048-.455 1.859zm-7.763 0c-1.04-.025-2.07-.025-3.11-.025-1.091 0-2.169 0-3.247.025v-.317c.613.036 1.115-.122 1.115-.812v-6.158c0-.848-.467-.86-1.115-.872v-.316c.574.013 1.14.024 1.69.024.563 0 1.128-.011 1.74-.024v.316c-.649.012-1.115.024-1.115.872v5.623c0 .897.196 1.275 1.935 1.275 1.421 0 1.911-.34 2.291-1.518l.27.048-.454 1.859zm-9.825-7.287c0-.848-.464-.86-1.113-.872v-.316c.575.013 1.138.024 1.69.024.562 0 1.127-.011 1.74-.024v.316c-.65.012-1.115.024-1.115.872v6.097c0 .85.465.86 1.115.873v.317c-.588 0-1.115-.025-1.655-.025-.586 0-1.163.012-1.775.025v-.317c.649-.012 1.113-.024 1.113-.873v-6.097zm-8.566 2.443c-.306-.778-.662-1.568-.943-2.357-.281-.728-.478-.958-1.288-.958v-.316c.577.013 1.153.024 1.728.024.516 0 1.041-.024 1.557-.024v.316c-.184.012-.356.012-.527.036-.171.012-.32.11-.32.292 0 .399.65 1.87.785 2.22l1.63 4.153.93-2.404c.295-.789.637-1.566.894-2.355.124-.388.38-.984.38-1.384 0-.57-.49-.534-.93-.558v-.316c.478.013.968.024 1.446.024.379 0 .76-.011 1.139-.024v.316c-.417 0-.65.182-.82.474-.076.133-.907 2.233-.931 2.294l-2.243 5.571h-.453l-2.034-5.024zm-10.884-3.243c-.306 0-.515.037-.735.074v3.557c.184.036.44.06.65.06 1.506 0 2.094-.983 2.094-1.858 0-1.057-.564-1.833-2.009-1.833zm-.735 4.08v2.817c0 .85.466.86 1.115.873v.317c-.588 0-1.115-.025-1.654-.025-.59 0-1.163.012-1.776.025v-.317c.613.036 1.114-.122 1.114-.812v-6.158c0-.848-.466-.86-1.114-.872v-.316c.674.013 1.262.024 1.863.024.427 0 .857-.024 1.64-.024 2.316 0 2.83 1.287 2.83 2.149 0 1.032-.784 1.796-1.74 2.076 1.115 1.614 1.703 2.586 2.23 3.169.392.437.76.764 1.384.764v.317c-.306 0-.612-.025-.918-.025-.343 0-.698.012-1.041.025-1.115-1.215-1.936-2.636-2.818-4.008h-1.115zm-7.752-.633h1.617c.991 0 .991-.764 1.028-1.043h.245c-.024.267-.048.923-.048 1.36 0 .389.061.96.048 1.348h-.245c0-1.165-.391-1.165-1.335-1.165h-1.31v2.064c0 1.347.048 1.687 1.261 1.687h.758c1.202-.062 1.742-.22 2.22-1.518l.293.048c-.197.607-.38 1.226-.503 1.859-1.225 0-2.449-.025-3.674-.025-.907 0-1.814 0-2.72.025v-.317c1.065 0 1.163-.194 1.163-1.372v-5.39c0-.996-.195-1.044-1.163-1.08v-.316c.822.024 1.653.024 2.473.024 1.178 0 2.34 0 3.53-.024v1.809l-.245.06c-.184-1.14-.735-1.48-1.96-1.48H108.1v3.446zm-3.538-2.245h-.33c-.038-.654 0-1.092-.98-1.092h-1.864v6.787c0 .85.467.86 1.115.873v.317c-.588 0-1.115-.025-1.654-.025-.587 0-1.164.012-1.776.025v-.317c.65-.012 1.115-.024 1.115-.873V9.862h-1.605c-1.102 0-1.15.304-1.36 1.092h-.318l.135-1.93h.245c.135.329.466.34.772.34h5.56c.443 0 .748-.11.797-.34h.257l-.11 1.93zm-13.596 4.88h.282c.208.911.894 1.798 1.91 1.798.943 0 1.68-.656 1.68-1.614 0-2.259-3.627-1.593-3.627-4.457 0-1.565 1.128-2.379 2.621-2.379.503 0 1.005.109 1.495.182l.197 1.555h-.284c-.134-.85-.697-1.349-1.58-1.349-.93 0-1.468.668-1.468 1.555 0 2.258 3.772 1.64 3.772 4.43 0 1.58-1.433 2.464-2.878 2.464a4.56 4.56 0 0 1-1.875-.41l-.245-1.774zM85.274 13.2h1.617c.991 0 .991-.764 1.03-1.043h.244c-.024.267-.05.923-.05 1.36 0 .389.062.96.05 1.348h-.245c0-1.165-.391-1.165-1.335-1.165h-1.311v2.064c0 1.347.05 1.687 1.261 1.687h.76c1.2-.062 1.74-.22 2.217-1.518l.295.048c-.197.607-.38 1.226-.503 1.859-1.224 0-2.45-.025-3.675-.025-.906 0-1.813 0-2.72.025v-.317c1.066 0 1.164-.194 1.164-1.372v-5.39c0-.996-.196-1.044-1.164-1.08v-.316c.821.024 1.654.024 2.476.024 1.176 0 2.339 0 3.528-.024v1.809l-.247.06c-.182-1.14-.734-1.48-1.959-1.48h-1.433v3.446zm-3.53-1.638h-.306c-.233-1.42-1.25-1.99-2.622-1.99-1.408 0-3.454.933-3.454 3.848 0 2.453 1.764 4.213 3.65 4.213 1.213 0 2.217-.825 2.462-2.102l.282.075-.282 1.77c-.514.317-1.898.644-2.707.644-2.867 0-4.68-1.831-4.68-4.564 0-2.488 2.243-4.273 4.643-4.273.993 0 1.948.316 2.892.644l.122 1.735zm-10.992-1.009c0-.848-.466-.86-1.114-.872v-.316c.576.013 1.14.024 1.69.024.564 0 1.128-.011 1.74-.024v.316c-.649.012-1.114.024-1.114.872v6.097c0 .85.465.86 1.114.873v.317c-.588 0-1.114-.025-1.654-.025-.588 0-1.163.012-1.776.025v-.317c.648-.012 1.114-.024 1.114-.873v-6.097zm-6.301 5.901c0 .547 0 .997 1.102.997 1.458 0 1.936-.984 1.936-1.736 0-1.737-1.09-2.125-2.303-2.125h-.735v2.864zm0-3.254h.466c.992 0 1.862-.314 1.862-1.844 0-1.396-.834-1.603-1.814-1.603a7.67 7.67 0 0 0-.514.024V13.2zm-2.316 4.323c.612.036 1.115-.122 1.115-.812v-6.158c0-.848-.465-.86-1.115-.872v-.316c.343 0 .686.024 1.018.024h.378c.698 0 1.152-.024 1.593-.024.907 0 2.855.254 2.855 1.966 0 1.13-1.03 1.713-1.972 1.931v.024c.918-.048 2.756.559 2.756 2.27 0 1.3-1.127 2.284-3.295 2.284-.576 0-1.152-.025-1.727-.025-.54 0-1.08.012-1.606.025v-.317zM53.738 13.2h1.617c.991 0 .991-.764 1.03-1.043h.243c-.024.267-.048.923-.048 1.36 0 .389.061.96.048 1.348h-.243c0-1.165-.393-1.165-1.336-1.165h-1.31v2.064c0 1.347.048 1.687 1.26 1.687h.76c1.201-.062 1.74-.22 2.218-1.518l.294.048c-.196.607-.38 1.226-.502 1.859-1.226 0-2.45-.025-3.675-.025-.907 0-1.814 0-2.72.025v-.317c1.066 0 1.163-.194 1.163-1.372v-5.39c0-.996-.196-1.044-1.164-1.08v-.316c.82.024 1.655.024 2.475.024 1.177 0 2.339 0 3.528-.024v1.809l-.245.06c-.184-1.14-.735-1.48-1.96-1.48h-1.433v3.446zm-5.819 0v-2.647c0-.848-.465-.86-1.115-.872v-.316c.65.013 1.225.024 1.814.024.526 0 1.065-.024 1.616-.024v.316c-.648.012-1.115.024-1.115.872v6.097c0 .85.467.86 1.115.873v.317a72.088 72.088 0 0 0-1.654-.025c-.575 0-1.138.012-1.776.025v-.317c.65-.012 1.115-.024 1.115-.873v-2.95H42.97v2.95c0 .85.466.86 1.115.873v.317c-.588 0-1.115-.025-1.654-.025-.588 0-1.163.012-1.776.025v-.317c.648-.012 1.115-.024 1.115-.873v-6.097c0-.848-.467-.86-1.115-.872v-.316c.576.013 1.14.024 1.69.024.564 0 1.128-.011 1.74-.024v.316c-.65.012-1.115.024-1.115.872V13.2h4.95zm-8.399-2.245h-.33c-.039-.654 0-1.092-.981-1.092h-1.861v6.787c0 .85.464.86 1.113.873v.317c-.588 0-1.113-.025-1.653-.025-.589 0-1.164.012-1.776.025v-.317c.649-.012 1.114-.024 1.114-.873V9.862h-1.604c-1.102 0-1.152.304-1.36 1.092h-.319l.134-1.93h.245c.135.329.467.34.773.34h5.561c.442 0 .748-.11.796-.34h.258l-.11 1.93z"
+									fill="#202020" fill-rule="evenodd"></path>
+							</svg>
+						</span>
+					</div>
+					<div class="footer_text">
+						Bicester Village is a member of The Bicester Village Shopping Collection ®
+						<br>
+						© Bicester Village 2021.
+					</div>
+				</footer>
+
+				<!-- // Centralised website footer -->
+
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+
+			var thresholdSlider1 = $('#QUESTION_EXPERIENCE');
+			thresholdSlider1.slider({
+				value: 0,
+				formater: function (value) {
+					return 'Current value: ' + value;
+				}
+			});
+
+			thresholdSlider1.slider().on('slideStop', function (ev) {
+				thresholdSlider1.slider('setValue', ev.value)
+				$("input#QUESTION_EXPERIENCE_Store").val(ev.value)
+			});
+
+		});
+	</script>
+	<script src="Guest_Sentiment_Survey-JS.js"></script>
+	<script src="Guest_Sentiment_Survey-Translations_EN-js.js"></script>
+</body>
+
+</html>
